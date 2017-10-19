@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg7357"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="credits.svg"
+   inkscape:export-filename="C:\Users\Eric\Documents\Foreign Aid Fighter\Assets\title.png"
+   inkscape:export-xdpi="324.82599"
+   inkscape:export-ydpi="324.82599">
+  <defs
+     id="defs7351">
+    <filter
+       x="-0.25"
+       width="1.5"
+       y="-0.25"
+       height="1.5"
+       inkscape:menu-tooltip="Smooth rainbow colors melted along the edges and colorizable"
+       inkscape:menu="Textures"
+       inkscape:label="Tinted Rainbow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter1792">
+      <feGaussianBlur
+         result="result8"
+         stdDeviation="5"
+         id="feGaussianBlur1780" />
+      <feTurbulence
+         baseFrequency="0.015"
+         numOctaves="2"
+         type="fractalNoise"
+         result="result7"
+         seed="20"
+         id="feTurbulence1782" />
+      <feComposite
+         in="SourceGraphic"
+         operator="in"
+         result="result6"
+         in2="result8"
+         id="feComposite1784" />
+      <feComposite
+         in="result6"
+         operator="arithmetic"
+         result="result2"
+         in2="result7"
+         k3="1.7"
+         id="feComposite1786" />
+      <feComposite
+         in2="result6"
+         operator="in"
+         in="result2"
+         result="fbSourceGraphic"
+         id="feComposite1788" />
+      <feComposite
+         in2="SourceGraphic"
+         in="fbSourceGraphic"
+         k3="0.3"
+         k2="1.5"
+         operator="arithmetic"
+         result="result9"
+         id="feComposite1790" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="521.07884"
+     inkscape:cy="468.40055"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="136"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7354">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1434"
+       style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:40px;line-height:45.63552094px;font-family:'Helvetica Inserat LT Std';-inkscape-font-specification:'Helvetica Inserat LT Std, Ultra-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:3.58679152px;word-spacing:0.24018697px;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#ffd42a;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       transform="matrix(0.33047173,0,0,0.33047173,-138.50283,-24.06578)"
+       inkscape:export-xdpi="324.82599"
+       inkscape:export-ydpi="324.82599"><flowRegion
+         id="flowRegion1436"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:40px;line-height:45.63552094px;font-family:'Helvetica Inserat LT Std';-inkscape-font-specification:'Helvetica Inserat LT Std, Ultra-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:3.58679152px;word-spacing:0.24018697px;writing-mode:lr-tb;text-anchor:start;fill:#ffd42a;stroke:#000000;stroke-opacity:1"><rect
+           id="rect1438"
+           width="573.7666"
+           height="137.38075"
+           x="149.50258"
+           y="449.75809"
+           style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:40px;line-height:45.63552094px;font-family:'Helvetica Inserat LT Std';-inkscape-font-specification:'Helvetica Inserat LT Std, Ultra-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:3.58679152px;word-spacing:0.24018697px;writing-mode:lr-tb;text-anchor:start;fill:#ffd42a;stroke:#000000;stroke-opacity:1" /></flowRegion><flowPara
+         id="flowPara1440"
+         style="text-align:end;text-anchor:end;stroke:#000000;stroke-opacity:1">Foreign</flowPara><flowPara
+         id="flowPara1800"
+         style="text-align:end;text-anchor:end;stroke:#000000;stroke-opacity:1">Aid</flowPara><flowPara
+         id="flowPara1798"><flowSpan
+   style="text-align:end;text-anchor:end;stroke:#000000;stroke-opacity:1"
+   id="flowSpan1810">Fighte</flowSpan>r</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1802"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:0px;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion1804"><rect
+           id="rect1806"
+           width="175"
+           height="137.14285"
+           x="188.57143"
+           y="573.23395" /></flowRegion><flowPara
+         id="flowPara1808"></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2012"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:14px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-0.94494047,5.2916666)"><flowRegion
+         id="flowRegion2014"
+         style="line-height:14px"><rect
+           id="rect2016"
+           width="387.14285"
+           height="296.42862"
+           x="400"
+           y="431.09113"
+           style="line-height:14px" /></flowRegion><flowPara
+         id="flowPara2018"
+         style="font-size:17.33333397px;line-height:14px">Created by Eric Nelson</flowPara><flowPara
+         style="font-size:17.33333397px;line-height:14px"
+         id="flowPara2028">Special thanks to Dr. Bowen Hui</flowPara><flowPara
+         style="font-size:17.33333397px;line-height:14px"
+         id="flowPara2042" /><flowPara
+         style="font-size:17.33333397px;line-height:14px"
+         id="flowPara2044">World Map image:</flowPara><flowPara
+         style="font-size:17.33333397px;line-height:14px"
+         id="flowPara2048" /><flowPara
+         style="font-size:17.33333397px;line-height:14px"
+         id="flowPara2050">https://commons.wikimedia.org/wiki/File:Political_map_of_the_world_-_Soviet_legacy_color-scheme.svg</flowPara><flowPara
+         style="font-size:17.33333397px;line-height:14px"
+         id="flowPara2052" /><flowPara
+         style="font-size:17.33333397px;line-height:14px"
+         id="flowPara2046">This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2020"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:0px;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion2022"><rect
+           id="rect2024"
+           width="165"
+           height="52.142857"
+           x="400.71429"
+           y="448.94827" /></flowRegion><flowPara
+         id="flowPara2026"></flowPara></flowRoot>  </g>
+</svg>
