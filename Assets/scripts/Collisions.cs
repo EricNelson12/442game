@@ -5,27 +5,53 @@ using UnityEngine.UI;
 
 public class Collisions : MonoBehaviour {
 
-    Text dbg;
+    Text dbg,dbg2,inst;
+    GameObject[] countryList;
+    gameController planeGC;
+    int CurrentCountry;
 
     // Use this for initialization
     void Start () {
-		dbg = GameObject.Find("debugtextL").GetComponent<Text>();
+        
+    
+        dbg = GameObject.Find("debugtextR").GetComponent<Text>();
+        dbg2 = GameObject.Find("debugtextL").GetComponent<Text>();
+
+        planeGC = GameObject.Find("plane").GetComponent<gameController>();
+
+
+
+
+        countryList = planeGC.countryList;
+        CurrentCountry = planeGC.CurrentCountry;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        dbg.text = (other.gameObject.name);
-        Debug.Log("Hit America");
+        if (other.tag.Equals("countries"))
+        {
+            //dbg2.text = "this: " + this.tag + "  other: " + other.name + " cname: " + countryList[CurrentCountry].name;
+            if (this.tag.Equals("supplies") && other.name.Equals(countryList[CurrentCountry].name))
+            {
+                planeGC.CurrentCountry++;                
+            }            
+        }
+
+        
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("Exiting " + other);
-        transform.position = new Vector3(-255, 120, 0);
+        if (other.name.Equals("Boundary"))
+        {
+            Debug.Log("Exiting " + other);
+            transform.position = new Vector3(-255, 120, 0);
+        }
+        
     }
 
     // Update is called once per frame
     void Update () {
-		
+        
 	}
 }

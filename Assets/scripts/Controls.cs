@@ -18,13 +18,17 @@ public class Controls : MonoBehaviour {
     float tapthresh = 1f;
     int tapcount = 0;
 
+    gameController planeGC;
+    private AudioSource audioSource;
     private GameObject plane, boosterLeft, boosterRight;    
 
     // Use this for initialization
     void Start () {
         //Debug text
         debugtextL = GameObject.Find("debugtextL"). GetComponent<Text>();
-        debugtextR = GameObject.Find("debugtextR").GetComponent<Text>();     
+        debugtextR = GameObject.Find("debugtextR").GetComponent<Text>();
+        planeGC = GameObject.Find("plane").GetComponent<gameController>();
+        
     } 
 
     // Update is called once per frame
@@ -110,10 +114,20 @@ public class Controls : MonoBehaviour {
             //Touch has just began, start timer 
         }
 
+        
+
         if(tapcount >= 2)
         {
             tapcount = 0;
-            Instantiate(GameObject.Find("supplies"));
+            if (planeGC.supplyAmount > 0)
+            {
+                
+
+                GameObject sup =  Instantiate(GameObject.Find("supplies"));
+                sup.GetComponent<AudioSource>().Play();
+                
+                planeGC.supplyAmount--;
+            }
         }
 
     }

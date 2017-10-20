@@ -12,6 +12,7 @@ public class tutorial : MonoBehaviour
     int touchcount;
     bool dir;
     GameObject plane, gameObjects;
+    private gameController planeGC;
     Text debugtextR;
 
     int STAGE;
@@ -32,6 +33,8 @@ public class tutorial : MonoBehaviour
         texttut = GameObject.Find("tutorialText").GetComponent<Text>();
         debugtextR = GameObject.Find("debugtextR").GetComponent<Text>();
         plane = GameObject.Find("plane");
+        planeGC = GameObject.Find("plane").GetComponent<gameController>();
+        planeGC.supplyAmount = 9999;
 
         texttut.text = "Welcome to the tutorial!";
     }
@@ -80,7 +83,7 @@ public class tutorial : MonoBehaviour
             }
             else
             {
-                texttut.text = "Great job! You can fly and drop supplies! Time to get out there and save the world! \n quit the tutorial when you're ready";
+                texttut.text = "Great job! You can fly and drop supplies! Time to get out there and save the world! \n Quit the tutorial when you're ready";
             }
            
         }

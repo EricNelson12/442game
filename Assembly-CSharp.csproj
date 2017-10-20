@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\gameController.cs" />
      <Compile Include="Assets\scripts\Collisions.cs" />
      <Compile Include="Assets\scripts\Controls.cs" />
      <Compile Include="Assets\scripts\dropSupplies.cs" />
