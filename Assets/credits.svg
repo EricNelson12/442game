@@ -16,9 +16,9 @@
    id="svg7357"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="credits.svg"
-   inkscape:export-filename="C:\Users\Eric\Documents\Foreign Aid Fighter\Assets\title.png"
-   inkscape:export-xdpi="324.82599"
-   inkscape:export-ydpi="324.82599">
+   inkscape:export-filename="C:\Users\Eric\Documents\Foreign Aid Fighter\Assets\credits.png"
+   inkscape:export-xdpi="324.23001"
+   inkscape:export-ydpi="324.23001">
   <defs
      id="defs7351">
     <filter
@@ -79,10 +79,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="521.07884"
+     inkscape:cx="400.7217"
      inkscape:cy="468.40055"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
@@ -97,10 +97,22 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <rect
+       style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.10637224;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect849"
+       width="92.226196"
+       height="80.886909"
+       x="101.86457"
+       y="116.51637" />
+  </g>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -137,11 +149,21 @@
            height="137.14285"
            x="188.57143"
            y="573.23395" /></flowRegion><flowPara
-         id="flowPara1808"></flowPara></flowRoot>    <flowRoot
+         id="flowPara1808" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2020"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:0px;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion2022"><rect
+           id="rect2024"
+           width="165"
+           height="52.142857"
+           x="400.71429"
+           y="448.94827" /></flowRegion><flowPara
+         id="flowPara2026" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot2012"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:14px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,-0.94494047,5.2916666)"><flowRegion
+       style="display:inline;font-style:normal;font-weight:normal;font-size:40px;line-height:14px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-0.94494046,5.2916667)"><flowRegion
          id="flowRegion2014"
          style="line-height:14px"><rect
            id="rect2016"
@@ -163,17 +185,11 @@
          style="font-size:17.33333397px;line-height:14px"
          id="flowPara2050">https://commons.wikimedia.org/wiki/File:Political_map_of_the_world_-_Soviet_legacy_color-scheme.svg</flowPara><flowPara
          style="font-size:17.33333397px;line-height:14px"
+         id="flowPara845" /><flowPara
+         style="font-size:17.33333397px;line-height:14px"
+         id="flowPara847">https://commons.wikimedia.org/wiki/File:MiG-29.svg</flowPara><flowPara
+         style="font-size:17.33333397px;line-height:14px"
          id="flowPara2052" /><flowPara
          style="font-size:17.33333397px;line-height:14px"
-         id="flowPara2046">This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.</flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot2020"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:0px;letter-spacing:0px;word-spacing:0px"><flowRegion
-         id="flowRegion2022"><rect
-           id="rect2024"
-           width="165"
-           height="52.142857"
-           x="400.71429"
-           y="448.94827" /></flowRegion><flowPara
-         id="flowPara2026"></flowPara></flowRoot>  </g>
+         id="flowPara2046">This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.</flowPara></flowRoot>  </g>
 </svg>

@@ -9,6 +9,7 @@ public class Collisions : MonoBehaviour {
     GameObject[] countryList;
     gameController planeGC;
     int CurrentCountry;
+    System.Random RAND;
 
     // Use this for initialization
     void Start () {
@@ -48,6 +49,15 @@ public class Collisions : MonoBehaviour {
             transform.position = new Vector3(-255, 120, 0);
         }
         
+    }
+
+
+    private void moveToRandom()
+    {
+        Vector3 center = new Vector3(-230, 101, 0);
+        float xRand = -230f + ((float)RAND.NextDouble() * 193f) - 96f;
+        float yRand = 101f + ((float)RAND.NextDouble() * 110f) - 55f;
+        transform.position = new Vector3(xRand, yRand);
     }
 
     // Update is called once per frame
