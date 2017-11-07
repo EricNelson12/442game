@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_1;UNITY_2017_1;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_1;UNITY_2017_1;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_HAS_GOOGLEVR</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -51,15 +51,58 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\enemybullet.cs" />
      <Compile Include="Assets\scripts\Collisions.cs" />
      <Compile Include="Assets\scripts\Controls.cs" />
-     <Compile Include="Assets\scripts\ememyplane.cs" />
+     <Compile Include="Assets\scripts\enemybullet.cs" />
+     <Compile Include="Assets\scripts\enemyplane.cs" />
      <Compile Include="Assets\scripts\gameController.cs" />
      <Compile Include="Assets\scripts\loadScene.cs" />
      <Compile Include="Assets\scripts\playerbullet.cs" />
      <Compile Include="Assets\scripts\SupplyInit.cs" />
      <Compile Include="Assets\scripts\tutorial.cs" />
+     <None Include="Assets\Plugins\Android\Firebase\res\values\google-services.xml" />
+     <None Include="Assets\Plugins\Android\firebase-analytics-unity-4.2.1\R.txt" />
+     <None Include="Assets\Plugins\Android\firebase-iid-license-11.4.2\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\firebase-auth-unity-4.2.1\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\firebase-analytics-license-11.4.2\third_party_licenses.txt" />
+     <None Include="Assets\Plugins\Android\firebase-common-11.4.2\AndroidManifest.xml" />
+     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
+     <None Include="Assets\Plugins\Android\firebase-analytics-impl-license-11.4.2\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\firebase-auth-unity-4.2.1\proguard.txt" />
+     <None Include="Assets\Firebase\Plugins\link.xml" />
+     <None Include="Assets\Plugins\Android\firebase-iid-11.4.2\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\firebase-common-license-11.4.2\third_party_licenses.txt" />
+     <None Include="Assets\Plugins\Android\play-services-basement-license-11.4.2\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\firebase-core-11.4.2\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\Firebase\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\play-services-base-license-11.4.2\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\firebase-analytics-unity-4.2.1\proguard.txt" />
+     <None Include="Assets\Plugins\Android\play-services-base-license-11.4.2\third_party_licenses.txt" />
+     <None Include="Assets\Firebase\Editor\AppDependencies.xml" />
+     <None Include="Assets\Plugins\Android\play-services-basement-license-11.4.2\third_party_licenses.txt" />
+     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-analytics-unity\maven-metadata.xml" />
+     <None Include="Assets\Plugins\Android\firebase-app-unity-4.2.1\AndroidManifest.xml" />
+     <None Include="Assets\Firebase\Editor\AnalyticsDependencies.xml" />
+     <None Include="Assets\Plugins\Android\firebase-analytics-unity-4.2.1\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\firebase-auth-license-11.4.2\AndroidManifest.xml" />
+     <None Include="Assets\Firebase\Editor\AuthDependencies.xml" />
+     <None Include="Assets\Firebase\Editor\FirebaseAuth_v4.2.1_manifest.txt" />
+     <None Include="Assets\Plugins\Android\firebase-app-unity-4.2.1\R.txt" />
+     <None Include="Assets\Plugins\Android\play-services-tasks-license-11.4.2\third_party_licenses.txt" />
+     <None Include="Assets\Plugins\Android\play-services-tasks-license-11.4.2\AndroidManifest.xml" />
+     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
+     <None Include="Assets\Plugins\Android\firebase-core-11.4.2\R.txt" />
+     <None Include="Assets\Plugins\Android\firebase-auth-unity-4.2.1\R.txt" />
+     <None Include="Assets\Plugins\Android\firebase-iid-license-11.4.2\third_party_licenses.txt" />
+     <None Include="Assets\Plugins\Android\firebase-analytics-license-11.4.2\AndroidManifest.xml" />
+     <None Include="Assets\Firebase\Editor\FirebaseAnalytics_v4.2.1_manifest.txt" />
+     <None Include="Assets\Plugins\Android\firebase-auth-license-11.4.2\third_party_licenses.txt" />
+     <None Include="Assets\Firebase\Plugins\Http\link.xml" />
+     <None Include="Assets\Plugins\Android\firebase-analytics-impl-license-11.4.2\third_party_licenses.txt" />
+     <None Include="Assets\Firebase\Editor\FirebaseDatabase_v4.2.1_manifest.txt" />
+     <None Include="Assets\Plugins\Android\firebase-app-unity-4.2.1\proguard.txt" />
+     <None Include="Assets\Plugins\Android\firebase-common-license-11.4.2\AndroidManifest.xml" />
+     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.59.0.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -80,6 +123,30 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.App">
+ <HintPath>C:/Users/Eric/Documents/Foreign Aid Fighter/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Auth">
+ <HintPath>C:/Users/Eric/Documents/Foreign Aid Fighter/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Database">
+ <HintPath>C:/Users/Eric/Documents/Foreign Aid Fighter/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.MiniJson">
+ <HintPath>C:/Users/Eric/Documents/Foreign Aid Fighter/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.Sharpen">
+ <HintPath>C:/Users/Eric/Documents/Foreign Aid Fighter/Assets/Firebase/Plugins/Google.Sharpen.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Compat">
+ <HintPath>C:/Users/Eric/Documents/Foreign Aid Fighter/Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Tasks">
+ <HintPath>C:/Users/Eric/Documents/Foreign Aid Fighter/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Analytics">
+ <HintPath>C:/Users/Eric/Documents/Foreign Aid Fighter/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

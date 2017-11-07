@@ -6,15 +6,15 @@ using UnityEngine.UI;
 public class Collisions : MonoBehaviour {
 
     Text dbg,dbg2,inst;
-    GameObject[] countryList;
+    List<GameObject> countryList;
     gameController planeGC;
     int CurrentCountry;
     System.Random RAND;
 
     // Use this for initialization
     void Start () {
-        
-    
+
+        RAND = new System.Random();
         dbg = GameObject.Find("debugtextR").GetComponent<Text>();
         dbg2 = GameObject.Find("debugtextL").GetComponent<Text>();
 
@@ -26,27 +26,15 @@ public class Collisions : MonoBehaviour {
         countryList = planeGC.countryList;
         CurrentCountry = planeGC.CurrentCountry;
     }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag.Equals("countries"))
-        {
-            //dbg2.text = "this: " + this.tag + "  other: " + other.name + " cname: " + countryList[CurrentCountry].name;
-            if (this.tag.Equals("supplies") && other.name.Equals(countryList[CurrentCountry].name))
-            {
-                planeGC.CurrentCountry++;                
-            }            
-        }
-
-        
-    }
+    
+    
 
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.name.Equals("Boundary"))
         {
             Debug.Log("Exiting " + other);
-            transform.position = new Vector3(-255, 120, 0);
+            moveToRandom();
         }
         
     }

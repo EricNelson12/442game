@@ -8,6 +8,8 @@ TagManager:
   - countries
   - enemyplane
   - playerbullet
+  - WorldStuff
+  - enemybullet
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - supplies
   - plane
   - playerbullet
-  - 
+  - enemybullet
   - 
   - 
   - 
