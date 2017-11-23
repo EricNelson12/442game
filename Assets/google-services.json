@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "817664354628",
+    "firebase_url": "https://foreign-aid-fighter.firebaseio.com",
+    "project_id": "foreign-aid-fighter",
+    "storage_bucket": "foreign-aid-fighter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817664354628:android:f9c9ac780a960fe1",
+        "android_client_info": {
+          "package_name": "com.ericprods.faf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817664354628-vpti75oriv8a0v7hp3e11raucasoc5mf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcy8FOAz4dlN5c21zezZs2K2okOhwVv5c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="firebase_database_url" translatable="false">https://foreign-aid-fighter.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">817664354628</string>
+  <string name="google_storage_bucket" translatable="false">foreign-aid-fighter.appspot.com</string>
+  <string name="project_id" translatable="false">foreign-aid-fighter</string>
+  <string name="google_api_key" translatable="false">AIzaSyBcy8FOAz4dlN5c21zezZs2K2okOhwVv5c</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBcy8FOAz4dlN5c21zezZs2K2okOhwVv5c</string>
+  <string name="google_app_id" translatable="false">1:817664354628:android:f9c9ac780a960fe1</string>
+  <string name="default_web_client_id" translatable="false">817664354628-vpti75oriv8a0v7hp3e11raucasoc5mf.apps.googleusercontent.com</string>
+</resources>

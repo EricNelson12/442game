@@ -10,6 +10,8 @@ TagManager:
   - playerbullet
   - WorldStuff
   - enemybullet
+  - sup
+  - heart
   layers:
   - Default
   - TransparentFX
@@ -23,7 +25,7 @@ TagManager:
   - plane
   - playerbullet
   - enemybullet
-  - 
+  - fortBullet
   - 
   - 
   - 

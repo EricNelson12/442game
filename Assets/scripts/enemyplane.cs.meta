@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5cca8c6a30fcd6c44b8729a80d7dda2d
+timeCreated: 1510026006
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - enemybullet: {fileID: 1598868920770012, guid: 200fce67761d73941a43a6031bc8dbdb,
+      type: 2}
+  - playerBullet: {fileID: 1942117860826204, guid: 557c74219fce0ca45968d5fc77bade5b,
+      type: 2}
+  - explosionAnimatin: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 2}
+  - explosiddon: {fileID: 8300000, guid: edfaff5d3f4518d4f8b1b4935e358903, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
