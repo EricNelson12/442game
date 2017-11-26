@@ -19,7 +19,7 @@ public class playerbullet : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         rb.AddForce(transform.up * 5f,ForceMode2D.Impulse);
         //Debug.Log(transform.forward);
-        Destroy(this.gameObject, .3f);
+        Destroy(this.gameObject, .5f);
         planeGC.PLAYER_DATA.bulletsFired++;
         
         

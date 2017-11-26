@@ -12,6 +12,8 @@ TagManager:
   - enemybullet
   - sup
   - heart
+  - fort
+  - diff
   layers:
   - Default
   - TransparentFX

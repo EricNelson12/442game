@@ -186,7 +186,7 @@ public class enemyplane : MonoBehaviour
         {
             planeGC.PLAYER_DATA.enemiesDestroyed++;
             planeGC.money += 100;
-            planeGC.timeLeft += 4;
+            planeGC.timeLeft += 2;
 
             if ((int)UnityEngine.Random.Range(0, 2) == 0)
             {

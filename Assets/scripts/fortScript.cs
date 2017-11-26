@@ -5,11 +5,11 @@ using System;
 
 public class fortScript : MonoBehaviour {
 
-
+    int fortHealth = 100;
 
     //Public Variables
     private GameObject plane;
-    public GameObject enemybullet, playerBullet, explosionAnimatin, heart,turretLeft,turretRight;
+    public GameObject enemybullet, playerBullet, explosionAnimatin, heart,turretLeft,turretRight,smoke;
 
     public AudioClip explosiddon;
     gameController planeGC;
@@ -49,13 +49,13 @@ public class fortScript : MonoBehaviour {
         planeGC = GameObject.Find("plane").GetComponent<gameController>();
 
         //Start in random spot
-        //moveToRandom();
+        moveToRandom();
 
         //Get turret animaton
         taniml = turretLeft.GetComponent<Animator>();
         tanimr = turretRight.GetComponent<Animator>();
-        
 
+        Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), playerBullet.GetComponent<Collider2D>());
 
     }
 
@@ -71,48 +71,56 @@ public class fortScript : MonoBehaviour {
     void Update()
     {
 
-        rotateTurrets();
+        
 
         float distToPlane = Vector3.Magnitude(transform.position - plane.transform.position);
 
-        if (distToPlane < 15)
+        if (fortHealth > 50)
         {
-            
-
-            tanimr.SetBool("shoot", true);
-            taniml.SetBool("shoot", true);
-            //Debug.Log((Time.frameCount + randomShootDelay) % 10);
-            if ((Time.frameCount + randomShootDelay) % 15 == 0)
+            if (distToPlane < 15)
             {
-                
-                shoot();
-                
-            }
+                rotateTurrets();
+
+                tanimr.SetBool("shoot", true);
+                taniml.SetBool("shoot", true);
+                //Debug.Log((Time.frameCount + randomShootDelay) % 10);
+                if ((Time.frameCount + randomShootDelay) % 15 == 0)
+                {
+
+                    shoot();
+
+                }
 
 
-            if (distToPlane < 7)
-            {
-                bankaway();
+                if (distToPlane < 7)
+                {
+                    bankaway();
+                }
+                else
+                {
+                    MoveTowards(plane.transform.position);
+                }
             }
             else
             {
-                MoveTowards(plane.transform.position);
+                tanimr.SetBool("shoot", false);
+                taniml.SetBool("shoot", false);
+                MoveTowards(planeGC.countryList[planeGC.CurrentCountry].transform.position);
             }
+
+            limitThrottle();
+            movePlane();
         }
         else
         {
-            tanimr.SetBool("shoot", false);
-            taniml.SetBool("shoot", false);
-            MoveTowards(planeGC.countryList[planeGC.CurrentCountry].transform.position);
+           
+            MoveTowards(planeGC.countryList[0].transform.position);
         }
-
-        limitThrottle();
-        movePlane();
     }
 
     private void rotateTurrets()
     {
-        Vector3 futurePlane = plane.transform.position + plane.transform.up * UnityEngine.Random.Range(1f,3f);
+        Vector3 futurePlane = plane.transform.position + plane.transform.up * UnityEngine.Random.Range(2f,10);
         float angle = Vector2.Angle(turretLeft.transform.right, futurePlane - turretLeft.transform.position);
         if (angle < 90)
         {
@@ -209,9 +217,15 @@ public class fortScript : MonoBehaviour {
 
         if (coll.gameObject.tag.Equals("playerbullet"))
         {
+            smoke = Instantiate(smoke, coll.gameObject.transform.position, transform.rotation);
+         
+            smoke.transform.parent = transform;
+            smoke.transform.localScale = new Vector3(5, 5, 5);
+            
+            fortHealth -= 10;
             planeGC.PLAYER_DATA.enemiesDestroyed++;
-            planeGC.money += 100;
-            planeGC.timeLeft += 4;
+            
+            
 
             if ((int)UnityEngine.Random.Range(0, 2) == 0)
             {
@@ -219,16 +233,15 @@ public class fortScript : MonoBehaviour {
             }
         }
 
-        //GameObject ex = Instantiate(explosionAnimatin, transform.position - transform.right * .3f, transform.rotation);
-        //Destroy(this.gameObject, .3f);
-        //Destroy(ex, .6f);
-
-
-
-        //}
-
-
-    }
+        if(fortHealth < 0 || coll.gameObject.name.Equals("plane"))
+        {
+            planeGC.money += 500;
+            planeGC.timeLeft += 4;
+            GameObject ex = Instantiate(explosionAnimatin, transform.position - transform.right * .3f, transform.rotation);
+            Destroy(this.gameObject, .3f);
+            Destroy(ex, .6f);
+        }
+     }
 
     class AI
     {

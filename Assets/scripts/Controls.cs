@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class Controls : MonoBehaviour
 {
 
+    int ENEMY_BULLET_DAMAGE = 5;
+
     //Set initial Speed to .5    
     private float MIN_SPEED = .05f;
 
@@ -86,10 +88,14 @@ public class Controls : MonoBehaviour
         {
             planeGC.health -= 20;
         }
+        if (coll.gameObject.tag.Equals("fort"))
+        {
+            planeGC.health -= 60;
+        }
         else if (coll.gameObject.tag.Equals("enemybullet"))
         {
             Destroy(coll.gameObject, .1f);
-            planeGC.health -= 5;
+            planeGC.health -= ENEMY_BULLET_DAMAGE;
         }
     }
 

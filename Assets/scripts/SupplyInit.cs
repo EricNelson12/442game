@@ -33,7 +33,7 @@ public class SupplyInit : MonoBehaviour {
                 planeGC.countriesFound.Add(currentCountry);
                 planeGC.timeBonus.Add((int)planeGC.timeLeft);
                 Instantiate(sound1, transform);
-                planeGC.money += 350;                
+                planeGC.money += 3000;                
                 planeGC.setrandCountry();
                 
             }

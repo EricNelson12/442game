@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114311533097128838}
   m_Layer: 12
   m_Name: Fort
-  m_TagString: enemyplane
+  m_TagString: fort
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +100,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1540995298281328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -269.3, y: 128.21, z: 0}
+  m_LocalPosition: {x: -253.07564, y: 129.95471, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 0}
   m_Children:
   - {fileID: 4265186444892174}
@@ -119,9 +119,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 999999
+  m_Mass: 100
   m_LinearDrag: 0
-  m_AngularDrag: 999
+  m_AngularDrag: 0.1
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 6a3f440528de4c142b23ee3851a575f3, type: 2}
   m_Interpolate: 0
@@ -422,6 +422,7 @@ MonoBehaviour:
   heart: {fileID: 1463969910357868, guid: 029d61f198229254db0cbba72986c5f6, type: 2}
   turretLeft: {fileID: 1887566438822352}
   turretRight: {fileID: 1784569404305494}
+  smoke: {fileID: 1883998157174950, guid: 79fe230d8c33fba40a0c5aef1b8970ec, type: 2}
   explosiddon: {fileID: 8300000, guid: edfaff5d3f4518d4f8b1b4935e358903, type: 3}
 --- !u!114 &114568125493771826
 MonoBehaviour:

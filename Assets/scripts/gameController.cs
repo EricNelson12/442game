@@ -13,8 +13,9 @@ public class gameController : MonoBehaviour {
 
     const int HEALTH_PRICE = 0;
     const int SUPPLY_PRICE = 0;
-    const int ENEMY_AMOUNT = 1;
-    const int TIME = 30;
+    private int ENEMY_AMOUNT = 1;
+    private int FORT_AMOUNT = 10;
+    private int TIME = 35;
 
     public Text dbg, dbg2, inst,moneytxt,healthtxt,suptext;
     Button drop;
@@ -25,25 +26,59 @@ public class gameController : MonoBehaviour {
     public int supplyAmount;
     Scene scene;
 
-    public GameObject enemyplane,crate,heart, timeupSound;
-    public int money;
+    public GameObject enemyplane,crate,heart, timeupSound,fort;
+    public int money,oldmoney;
     public int health;
     bool GO = true;
 
     System.Random RAND;
 
     public int CurrentCountry;
-    public float timeLeft = TIME;
+    public float timeLeft;
 
     public PlayerData PLAYER_DATA;
     //DatabaseReference reference;
 
+    Animator animatorMoney;
+
+    Difficulty diff;
+
     // Use this for initialization
     void Start () {
+
+        GameObject diffOb = GameObject.Find("difficulty");
+            
+            
+
+        if (diffOb != null)
+        {
+            diff = diffOb.GetComponent<Difficulty>();
+            switch (diff.diff)
+            {
+                case 0:
+                    ENEMY_AMOUNT = 2;
+                    FORT_AMOUNT = 1;
+                    TIME = 60;
+                    break;
+                case 1:
+                    ENEMY_AMOUNT = 20;
+                    FORT_AMOUNT = 3;
+                    TIME = 45;
+                    break;
+                case 2:
+                    ENEMY_AMOUNT = 40;
+                    FORT_AMOUNT = 7;
+                    TIME = 30;
+                    break;
+            }
+        }
+        
+        
 
         dbg = GameObject.Find("debugtextL").GetComponent<Text>();
         dbg2 = GameObject.Find("debugtextR").GetComponent<Text>();
 
+        animatorMoney = moneytxt.GetComponent<Animator>();
         //Database stuff
         //FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://foreign-aid-fighter.firebaseio.com/");
         //reference= FirebaseDatabase.DefaultInstance.RootReference;
@@ -51,7 +86,9 @@ public class gameController : MonoBehaviour {
 
         RAND = new System.Random();
         scene = SceneManager.GetActiveScene();
-        money = 200;
+        timeLeft = TIME;
+        money = 0;
+        oldmoney = 0;
         health = 100;
         supplyAmount = 2;
         go = GameObject.Find("goCanvas").GetComponent<Canvas>();
@@ -137,7 +174,12 @@ public class gameController : MonoBehaviour {
     void updateText()
     {
         healthtxt.text = health + "%";
-        //moneytxt.text = "$" + money;
+        if(money != oldmoney)
+        {
+            moneytxt.text = money.ToString();
+            animatorMoney.SetTrigger("flashTrig");
+        }
+        oldmoney = money;
         suptext.text = "x" + supplyAmount.ToString();
         if (countryList.Count > 0)
         {
@@ -166,12 +208,17 @@ public class gameController : MonoBehaviour {
                 Instantiate(enemyplane);
             }
 
+            if (!(GameObject.FindGameObjectsWithTag("fort").Length > FORT_AMOUNT))
+            {
+                Instantiate(fort);
+            }
+
             if (!(GameObject.FindGameObjectsWithTag("sup").Length > 10))
             {
                 Instantiate(crate);
             }
 
-            if (!(GameObject.FindGameObjectsWithTag("heart").Length > 10))
+            if (!(GameObject.FindGameObjectsWithTag("heart").Length > 15))
             {
                 Instantiate(heart);
             }
@@ -190,6 +237,7 @@ public class gameController : MonoBehaviour {
     public void gameover(Text name)
         
     {
+        
         scoreCanvas.gameObject.SetActive(false);        
         go.gameObject.SetActive(true);        
         
@@ -210,7 +258,7 @@ public class gameController : MonoBehaviour {
         saveScore(name.text, score);
         
 
-        gotext.text = "Game Over\nCountries Found\n" + found + "\nTotal Score: " + score;
+        gotext.text = "\n+"+money+" points\nGame Over\nCountries Found\n" + found + "\nTotal Score: " + (score+money);
 
         int count = 0;
         string highscores = "Scores:";
@@ -254,10 +302,7 @@ public class gameController : MonoBehaviour {
 
     private void playerNameInput()
     {
-        PLAYER_DATA.Finalcash = money;
-        PLAYER_DATA.Finalhealth = health;
-        PLAYER_DATA.totalTime = Time.frameCount;
-        PLAYER_DATA.countriesLeft = countryList.Count;
+        
 
 
         GO = false;
